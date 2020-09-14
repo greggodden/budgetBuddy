@@ -1,0 +1,22 @@
+{
+  "name": "budget-buddy-server",
+  "version": "1.0.0",
+  "description": "budgetBuddy backend Node.js server running Express framework.",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "test": "test",
+    "start": "concurrently \"npm run server\" \"cd client/ && npm start\"",
+    "server": "nodemon server.js"
+  },
+  "author": "Greg Godden",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
